@@ -11,11 +11,10 @@ def read_input():
     if source[0] == 'I':
         return (input().rstrip(), input().rstrip())
     elif source[0] == 'F':
-        file_name = input()
-        if "a" in file_name:
-            return
-        file_name = 'tests/06' + file_name
-        with open(file_name, 'r') as f:
+        #file_name = input().rstrip()
+        #if "a" in file_name:
+           # return
+        with open("tests/06", 'r') as f:
             return (f.readline().rstrip(), f.readline().rstrip())
     else:
         return
