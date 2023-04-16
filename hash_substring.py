@@ -14,7 +14,7 @@ def read_input():
         file_name = input()
         if "a" in file_name:
             return
-        file_name = 'tests/' + file_name
+        file_name = 'tests/06' + file_name
         with open(file_name, 'r') as f:
             return (f.readline().rstrip(), f.readline().rstrip())
     else:
