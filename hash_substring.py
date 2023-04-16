@@ -1,6 +1,8 @@
 # python3
-import numpy as np
 # 221RDB224 Agate Šarna 6.grupa
+import numpy as np
+
+
 def read_input():
     # this function needs to aquire input both from keyboard and file
     # as before, use capital i (input from keyboard) and capital f (input from file) to choose which input type will follow
@@ -12,7 +14,7 @@ def read_input():
         file_name = input()
         if "a" in file_name:
             return
-        file_name = 'test/' + file_name
+        file_name = 'tests/' + file_name
         with open(file_name, 'r') as f:
             return (f.readline().rstrip(), f.readline().rstrip())
     else:
